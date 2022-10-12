@@ -1,0 +1,237 @@
+@import url(href="https://fonts.googleapis.com/css?family=poppins">
+);
+:root{
+    --text-color: #C7D3C9;
+    --book-now-text-color: #303C4E;
+    --book-now-and-see-bg-color:#A7DE93;
+    --linear-grt-color1: #5F8E51;
+    --linear-grt-color2:#234935;
+}
+
+*{
+    
+}
+html{
+    background: linear-gradient(100deg, #5F8E51, #234935) no-repeat;
+    font-size: 14px;
+}
+body{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+    position: relative;
+    font-family: "poppins", sans-serif;
+}
+/*  */
+header.header{
+    display: flex;
+    justify-content: space-between ;
+    transform: translateY(50px);
+    height: 10vh;
+}
+/*  */
+.header nav.navbar{
+    width: 80vw;
+    position: absolute;
+    left: -100px;
+}
+/*  */
+.header nav.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin: 0 0 0 0px;
+    padding: 0;
+}
+/* je retire la liste à puce */
+.header nav.navbar ul li{
+    list-style: none;
+}
+.header nav.navbar ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 1rem;
+    padding: 5px 15px;
+    position: relative;
+    margin: 0;
+    z-index: 100;
+}
+.header nav.navbar ul li a:hover{
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    z-index: 100;
+}
+
+section.section{
+    display: flex;
+    transform: translate(0, 80px);
+    justify-content: space-between;
+}
+/*  */
+/*  */
+.divgauche{
+    width: 50%;
+}
+.divdroite{
+    width: 40%;
+}
+.divgauche img.shadow{
+    position: relative;
+    width: 600px;
+    top: -120px;
+    left: -130px;
+}
+.divgauche img.citrouille{
+    position: absolute;
+    width: 400px;
+    left: 0;
+    top: 100px;
+}
+.textzz{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.thelabu_texte{
+    margin: 0;
+}
+.thelivingtexte{
+    margin: 7px 0 0 0;
+}
+.images{
+    height: 600px;
+}
+.souselements{
+    display: flex;
+    transform: translate(80px, -140px);
+}
+.pointer{
+    margin-left: 20px;
+}
+/*  */
+.divdroite .textbas{
+    display: flex;
+    justify-content: space-between;
+}
+.textbas{
+    transform: translate(0px, 90px);
+}
+.bouton{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book_news_texte{
+    transform: translate(30px,8px);
+    color: var(--book-now-text-color);
+    cursor: pointer;
+}
+.trapez{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: -4px;
+    cursor: pointer;
+}
+.divdroite .plusgrandtitre{
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.9;
+    margin: 0;
+    letter-spacing: -4px;
+}
+.texte_présentation{
+    font-size: 15px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.Track_et_fleche{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    transform: translate(-25px, 0px);
+}
+.trackrecord{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.arr{
+    width: 40px;
+    cursor: pointer;
+}
+.souris_et_texte{
+    width: 142px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.souris_icon{
+    width: 30px;
+    height: 60px;
+    border: 1px solid var(--book-now-and-see-bg-color);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.molette_souris{
+    width: 3px;
+    height: 9px;
+    background: var(--book-now-and-see-bg-color);
+    transform: translate(12.5px, 9px);
+    cursor: pointer;
+}
+.scrolltext{
+    /* text-align: center; */
+}
+/*  */
+.footer{
+    display: flex;
+    justify-content: right;
+    height: 250px;
+}
+.elementfooter{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(150px);
+
+
+}
+.boutonfooter{
+    position: relative;
+}
+
+.see_all_ghost{
+    position: absolute;
+    transform: translate(40px, -80px);
+    cursor: pointer;
+}
+
+/* elememnt scrollant */
+    .element_scrollant {
+        width: 40px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* background-color: #234935; */
+        position: absolute;
+        transform: translateX(75vw);
+    }
+    .point{
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #longpoint{
+        height: 30px;
+    }

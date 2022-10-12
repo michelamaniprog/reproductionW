@@ -1,0 +1,110 @@
+:root{
+    --color-grad-one: #04441b;
+    --color-grad-two: #298a57;
+    --color-grad-three: #f8f0a2;
+    --color-mp-oublie: #ff0000;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body.body{
+    background: linear-gradient(120deg, var(--color-grad-one), var(--color-grad-two), var(--color-grad-three) );
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.zone_blanche{
+    height: 70vh;
+    width: 100%;
+    background: white; 
+    position: absolute;
+    z-index: -23;
+    bottom: 0;
+ 
+}
+
+.boite{
+    
+    text-align: center;
+    background: white;
+    /* min-width: 25%;
+    height: 55%; */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, .3);
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.image_crou{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+input[type="text"],input[type="password"] {
+    margin: 15px 0px;
+    padding: 10px;
+    font-size: 10px;
+    color: rgba(4, 68, 27, 0.4); 
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 300px;
+    height: 10px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-bottom: none;
+}
+
+a.oublie{
+    color: red;
+    float: right;
+    margin: 0 10px 20px 0;
+    display: block;
+    text-align: right; 
+    font-size: .6rem;
+    font-weight: 700;
+    width: 100%;
+    text-decoration: none;
+}
+
+.boutton{
+    background-color: #04441b;
+    border: 1px solid var(--color-grad-two);
+    color: var(--color-grad-three);
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-top:10px;
+    font-size: 13px;
+    cursor: pointer;
+    height: 30px;
+    font-weight: 600;
+    transition: 1s;
+}
+/* techniques before after pour ajouter des elements avants et après */
+.boutton:hover{
+    background: #298a57;
+    transform: scale(1.2);
+}
+
+.validation{
+    width: 95%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+} 

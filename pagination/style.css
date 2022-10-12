@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-items: center; 
+    text-align: center;   
+    background: linear-gradient(-200deg, orange 7%, #f23b26 75%);
+}
+.conteneur{
+    padding: 30px 25px;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, .2);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.conteneur p{
+    font-size: 20px;
+}
+.titre-contenu{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.pagination{
+    margin: 20px 0 10px 0 ;
+}
+.pagination li{
+    list-style: none;
+    background: #f23b26;
+}
+.pagination,
+.pagination li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pagination li a{
+    text-decoration: none;
+    color: #fdfdfd;
+    height: 50px;
+    width: 60px;
+    padding-top: 1px;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-right-width: 0px;
+    box-shadow: inset 0 1px 0 0 rgba(225, 225, 225, .2) ;
+}
+.pagination li a:hover{
+    background: rgba(255, 255, 255, .2);
+    border-top-color: rgba(0, 0, 0, .35); ;
+    border-bottom-color: rgba(0, 0, 0, .5); ;
+}
+.pagination li a:focus,
+.pagination li a:active{
+    padding: 4px;
+    border-left-width: 1px ;
+    background: rgba(255, 255, 255, .15);
+    box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, .25) ;
+}
+.pagination li:last-child a{
+    border-right-width: 1px;
+}
+.pagination li.icon a{
+    width: 120px;
+}

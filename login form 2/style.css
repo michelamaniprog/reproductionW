@@ -1,0 +1,91 @@
+/*le corps est composé d'une police sans sérif
+d'une image de fond non repetée
+il ne contient pas de marge interne (padding) et externe(margin) */
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url('aa.jpg');
+	background-size: cover;
+}
+/*la .box est l'attibut de notre balise div en html. il constitue le conteneur nos différents éléments. il a une forme un position des bordures une transparence*/
+.box
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 15px 15px rgba(0,0,0,.5);
+}
+/*le modification de l'élément Login*/
+.box h2
+{
+	margin: 0 0 10px;
+	padding: 0;
+	color: #fff;
+	text-align: center;	
+}
+/*position des carrés de saisie nom et mot de passe*/
+.box .inputbox
+{
+	position: relative; 
+}
+/*modification des carrés de saisies*/
+.box .inputbox input
+{
+	width: 100%;
+	padding: 10px 0;
+	font-size:16px; 
+	letter-spacing : 1px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	
+}
+/*nom et mot de passe (caractères) */
+.box .inputbox label
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	letter-spacing : 1px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .7s;
+}
+/*celle partie du code est tres importante pour permettre la transision de se réaliser. ce code reduit la taille des caractères nom mot de passe appelés dans ici (label) et leur couleurs */
+.box .inputbox input:focus~label,
+.box .inputbox input:valid~label
+{
+	top: -18px;
+	left: 0;
+	color: #03A9F4;
+	font-size: 12px;
+}
+.box input[type="submit"]
+{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03A9F4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.box input[type="submit"]:hover
+{
+	color: #000;
+	background: #F3B48A;
+}
