@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0, 0, 0, .87);
+    line-height: 1.3;
+    margin: 0;
+}
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+    z-index: 3;
+}
+.topbar nav{
+    float: left;
+}
+
+.topbar nav a{
+    color: #9F9F9F;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 53px;
+}
+.topbar nav a:hover, .topbar nav a.active{
+    color: #000;
+}
+.social{
+    float: right;
+}
+.social a{
+     padding: 0 12px;
+     opacity: 0.5;
+}
+.social a:hover{
+    opacity: 1;
+}
+
+.banniere{
+    height: 427px;
+    background: no-repeat center center / cover url('img/bannière.png') ;
+}
+.main{
+    float: left;
+    width: calc(100% - 375px);
+    background: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+    position: relative;
+    z-index: 2;
+}
+
+.sidebar{
+    float: right;
+    background: #FBFBFB;
+    width: 375px;
+    padding: 40px;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-title{
+    font-size: 30px;
+    color: #000;
+    margin: 15px 0;
+}
+.sidebar-title:first-child{
+    margin-top: 0;
+}
+.sidebar a{
+    color: #9F9F9F; 
+    text-decoration: none;
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar li{
+    padding: 6px 10px;
+}
+.sidebar li:first-child{
+    padding-top:  0px;
+}
+.sidebar li:last-child{
+    padding-bottom: 0px;
+}
+.sidebar hr{
+     border: none;
+     background: #c4c4c4;
+     height: 1px;
+     margin: 50px 0;
+}
+.conteneur{
+    margin: 0px auto;
+    max-width: 940px;
+}
+.article{
+    position: relative;
+    min-height: 203px;
+    overflow: hidden;
+    margin: 50px;
+    /* margin: 50px auto; [1 technique pour centre la conteneur]*/
+    padding-left: 333px;
+    /* max-width: 940px; [ 2 technique pour centre la conteneur] */
+}
+.article a{
+    color: inherit;
+    text-decoration: none;
+}
+.article a:hover{
+    text-decoration: underline;
+}
+.article img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 308px;
+    margin-right: 25px;
+}
+.article-img img{
+    width: 100%;
+    height: auto;
+}
+.article-date{
+    font-weight: 300; 
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+.article-titre{
+    font-size: 2.25rem;
+    line-height: 1.7; 
+    font-family: serif;
+    margin: 0 0 15px 0;
+} 
+.footer{
+    clear: both;
+    justify-content: center;
+    display: flex;
+    background: #c2c2c2;
+    padding: 20px 10px;
+}
+
+
